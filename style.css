@@ -27,6 +27,12 @@ nav {
     text-align: left;
     padding: 1rem;
     background: whitesmoke;
+    z-index: 1;
+}
+
+.sticky {
+    position: sticky;
+    top: 0em;
 }
 
 ul {
