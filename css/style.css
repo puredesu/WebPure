@@ -28,8 +28,9 @@ header {
     width: 100vw;
     padding: 0.8rem 5vw;
     font-size: 0.875rem;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: max-content 1fr max-content;
     align-items: center;
     z-index: 1;
 }
