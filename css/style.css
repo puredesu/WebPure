@@ -26,17 +26,18 @@ header {
     box-shadow: 0px 1px 3px hsl(0, 0%, 80%);
     background: hsl(0, 0%, 96%);
     width: 100vw;
-    padding: 0.8rem 5vw;
+    padding: 0.8rem 15vw;
     font-size: 0.875rem;
-    display: grid;
-    justify-items: center;
-    grid-template-columns: max-content 1fr max-content;
+    display: flex;
+    justify-content:space-between;
     align-items: center;
+    flex-shrink: 0;
     z-index: 1;
 }
 
 nav {
     display: flex;
+    flex-shrink: 0;
     align-items: center;
     gap: 1.5rem;
 }
@@ -67,7 +68,7 @@ img {
 
 ul {
     display: flex;
-    flex-wrap: wrap;
+    flex-shrink: 0;
     gap: 0.6rem;
     list-style-type: none;
 }
