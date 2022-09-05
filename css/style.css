@@ -81,7 +81,7 @@ ul {
     padding: 0.8rem;
 }
 
-.textanchor:hover {
+.textanchor:hover, .textanchor:focus {
     color: hsl(238, 99%, 60%);
     background-color: rgb(221, 221, 221);
 }
