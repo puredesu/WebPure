@@ -12,6 +12,12 @@ body {
     background: hsl(46, 100%, 97%);
 }
 
+main {
+    display: flex;
+    width: 65vw;
+    margin: 5vh auto;
+}
+
 h1 {
     width: fit-content;
     margin: 0;
@@ -48,11 +54,23 @@ img {
 }
 
 .welcomescreen {
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 2rem;
+
+}
+
+.box {
+    border: 1px solid black;
+    border-radius: 1rem;
+    aspect-ratio: 1;
+}
+
+.box:last-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    aspect-ratio: 4;
 }
 
 .homelogo {
