@@ -35,7 +35,7 @@ header {
     padding: 0.8rem 15vw;
     font-size: 0.875rem;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     flex-shrink: 0;
     z-index: 1;
@@ -46,6 +46,18 @@ nav {
     flex-shrink: 0;
     align-items: center;
     gap: 1.5rem;
+}
+
+.rightnav {
+    gap: 0;
+}
+
+.divisionbar {
+    height: 20px;
+    width: 2px;
+    background-color: lightgray;
+    position: absolute;
+    display: none;
 }
 
 img {
@@ -77,6 +89,11 @@ img {
     width: auto;
     height: 2.5rem;
     display: flex;
+}
+
+.hamburger-menu-icon {
+    position: absolute;
+    display: none;
 }
 
 .sticky {
@@ -111,4 +128,28 @@ ul {
 .register {
     background-color: hsl(238, 70%, 60%);
     color: hsl(0, 0%, 96%);
+}
+
+@media screen and (max-width: 1015px) {
+    header {
+        padding: 0.8rem;
+        padding-right: 1.3rem;
+    }
+
+    .divisionbar {
+        display: block;
+        position: inherit;
+        margin: auto 1.5rem;
+    }
+
+    .hamburger-menu-icon {
+        display: block;
+        position: inherit;
+        width: 25px;
+        height: auto;
+    }
+
+    .navigationlinks {
+        display: none;
+    }
 }
